@@ -65,3 +65,16 @@ For input string ”1010” the machine will operate as follows:
 4. Current state = S2, Input = 0, result state = S1
 5. No more input
 6. Print output value (output for state S1 = 1) <---- **This is the answer**
+
+## To execute this project
+
+Execute/run following file from project's root directory, it accepts binary string as input and will display the remainder when the entered number is divided by 3.  Output will be displayed in the terminal.
+```
+app/run.bat
+```
+
+To run unit test cases, go to root of the project directory and execute following in your terminal
+
+```
+./vendor/bin/phpunit
+```
