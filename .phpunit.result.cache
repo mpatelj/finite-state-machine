@@ -1,1 +1,1 @@
-C:30:"PHPUnit\Runner\TestResultCache":242:{a:2:{s:7:"defects";a:3:{s:23:"CalculatorTest::testAdd";i:4;s:16:"FSMTest::testAdd";i:4;s:18:"FSMTest::testState";i:4;}s:5:"times";a:3:{s:23:"CalculatorTest::testAdd";d:0.003;s:16:"FSMTest::testAdd";d:0.003;s:18:"FSMTest::testState";d:0.004;}}}
+C:30:"PHPUnit\Runner\TestResultCache":242:{a:2:{s:7:"defects";a:3:{s:23:"CalculatorTest::testAdd";i:4;s:16:"FSMTest::testAdd";i:4;s:18:"FSMTest::testState";i:3;}s:5:"times";a:3:{s:23:"CalculatorTest::testAdd";d:0.003;s:16:"FSMTest::testAdd";d:0.003;s:18:"FSMTest::testState";d:0.013;}}}

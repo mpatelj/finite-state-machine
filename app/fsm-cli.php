@@ -1,7 +1,7 @@
 <?php
 		
 /**
- * Finite State Machine Library in PHP for Modulo Three
+ * Finite State Machine designed for Modulo Three
  * 
  * @author Margesh Patel
  * @date 6:17 PM Wednesday, December 12, 2020
@@ -23,7 +23,7 @@ $fsm = new StateMachine();
  **/
  
 print "~~~~~~~~~~~~~~~~~~~~~~~~~ \n";
-print "Finite State Machine\n";
+print "Finite State Machine - Modulo Three\n";
 print "~~~~~~~~~~~~~~~~~~~~~~~~~ \n\n";
 echo  "Options:\n\n";
 echo "1. Enter input strings\n";
@@ -41,7 +41,6 @@ $line = fgets($cin);
  **/
  
 if(trim($line) == 1){
-
 	while(1) {
 	
 		echo "Enter an input string (or 'q' to quit): ";
@@ -62,19 +61,15 @@ if(trim($line) == 1){
 		// Process bin string input/output selection
 		$fsm->process_bin_string();
 				
-		if($fsm->output >= 1){ 
+		if (preg_match_all('/[0-1]/m', $fsm->bin_str, $matches, PREG_SET_ORDER, 0)) { 
 			echo "String is ACCEPTED.\n";
 			echo "Output: {$fsm->output}";
 		} else {
 			echo "String is NOT ACCEPTED\n";
 			echo "Output: {$fsm->output}";
 		}		
-		
 		echo "\n";
-		
-
 	}
-
 }
 
 /**
@@ -82,11 +77,9 @@ if(trim($line) == 1){
  **/
   
 if(trim($line) == 2){
-
 	$fsm->print_transitions();
 	
-	sleep(20);
-	
+	sleep(10);
     exit;
 }
 
